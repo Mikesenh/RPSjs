@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" type="text/css" href="theme.css" />
+  </head>
+  <body>
+    <div class="empty-space"></div>
+    <div>
+      <h1 class="flex-center">✂️🗿🧻</h1>
+      <h2 class="flex-center">Rock Paper Scissors</h2>
+      <h3 class="flex-center">The Computer Has Already Made it’s Choice.</h3>
+    </div>
+
+    <h2 id="say_winner" class="show_score"></h2>
+    <h2 id="say_scoreboard" class="show_score"></h2>
+
+    <div class="flex-center">
+      <h1 id="displayPick">❓</h1>
+      <h4>VS</h4>
+      <h1 class="playerbot_think" id="playerbot"></h1>
+    </div>
+    <div id="input-method">
+      <h3 class="flex-center" id="pickYourWeapon">Pick Your Weapon:</h3>
+      <form id="playboard" class="flex-center">
+        <h4 id="scissors">✂️</h4>
+        <h4 id="rock">🗿</h4>
+        <h4 id="paper"">🧻</h4>
+      </form>
+      <div class="flex-center">
+        <input id="button-fight" type="submit" value="Fight!" />
+      </div>
+      <div class="flex-center">
+        <input
+          id="button-playagain"
+          class="display-none"
+          type="submit"
+          value="Play Again?"
+        />
+      </div>
+    </div>
+
+    <div class="empty-space"></div>
+    <script type="text/javascript" src="rpcApp.js"></script>
+  </body>
+</html>

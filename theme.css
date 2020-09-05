@@ -1,0 +1,136 @@
+body {
+  font-family: Righteous;
+  margin: 0;
+}
+
+h1 {
+  font-size: 150px;
+  margin: 1%;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 100px;
+  margin: 0;
+  transition: font-size 0.2s;
+  /*rule breaking*/
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#button-fight {
+  font-family: Righteous;
+  border-radius: 10px;
+  background-color: #691515;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  margin-top: 2%;
+  cursor: pointer;
+}
+
+.empty-space {
+  margin: 5%;
+}
+
+.playerbot_think:before {
+  content: "❓";
+  font-size: 150px;
+  animation-name: head;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes head {
+  0% {
+    font-size: 100%;
+    content: "🔫";
+  }
+  35% {
+    font-size: 100%;
+    content: "🗿";
+  }
+  70% {
+    font-size: 100%;
+    content: "🧻";
+  }
+  100% {
+    font-size: 100%;
+    content: "✂️";
+  }
+}
+
+#rock {
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+
+#paper {
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+
+#scissors {
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+
+#rock:hover {
+  font-size: 115px;
+}
+
+#paper:hover {
+  font-size: 115px;
+}
+
+#scissors:hover {
+  font-size: 115px;
+}
+
+.show_score {
+  text-align: center;
+  color: white;
+  margin: 0px;
+  background-color: grey;
+}
+
+#button-playagain {
+  margin: 0%;
+  font-family: Righteous;
+  border-radius: 10px;
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.display-none {
+  display: none;
+}
+
+.pickYourWeapon {
+  margin: 0;
+}
+
+#say_scoreboard {
+  margin-bottom: 2%;
+}
